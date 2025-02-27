@@ -103,3 +103,17 @@ fn augmented_assignments() {
     a %= 10;
     println!("operasi %= : {}", a);
 }
+
+#[test]
+fn multiple_variable() {
+    let (var1, var2, var3) = (1, "hallo", true);
+    println!("multiple var: {1} {0} {2}", var1, var2, var3);
+}
+
+#[test]
+fn boolean() {
+    let a = false;
+    let b: bool = true;
+
+    println!("{} {}", a, b);
+}
