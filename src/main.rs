@@ -126,3 +126,21 @@ fn comparison() {
     let c: bool = a <= b;
     println!("{}", c);
 }
+
+#[test]
+fn integermax() {
+    let a = i128::MAX;
+    println!("{}", a);
+}
+
+#[test]
+fn boolean_operation() {
+    let absen: i8 = 75;
+    let nilai: i8 = 80;
+
+    let lulus_absen: bool = absen >= 75;
+    let lulus_nilai: bool = nilai >= 75;
+
+    let kelulusan: bool = lulus_absen && lulus_nilai;
+    println!("{}", kelulusan);
+}
