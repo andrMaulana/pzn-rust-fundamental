@@ -152,3 +152,9 @@ fn char() {
 
     println!("{} {}", a, b);
 }
+
+#[test]
+fn test_tuple() {
+    let data: (&str, i8, bool) = ("Andri", 25, true);
+    println!("data => {:?}", data);
+}
