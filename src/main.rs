@@ -169,3 +169,12 @@ fn access_data_tuple() {
     let c = datas.2;
     println!("data 1: {}, data 2: {}, data 3: {}", a, b, c);
 }
+
+#[test]
+fn destructuring_tuple_test() {
+    let datas: (&str, i32, f64) = ("Andri Maulana", 24, 170.2);
+    println!("{:?}", datas);
+
+    let (data1, data2, _) = datas;
+    println!("data1: {} | data2: {} ", data1, data2);
+}
