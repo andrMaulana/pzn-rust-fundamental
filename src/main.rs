@@ -158,3 +158,14 @@ fn test_tuple() {
     let data: (&str, i8, bool) = ("Andri", 25, true);
     println!("data => {:?}", data);
 }
+
+#[test]
+fn access_data_tuple() {
+    let datas: (i32, f64, bool) = (10, 10.5, false);
+    println!("data: {:?}", datas);
+
+    let a = datas.0;
+    let b = datas.1;
+    let c = datas.2;
+    println!("data 1: {}, data 2: {}, data 3: {}", a, b, c);
+}
