@@ -178,3 +178,14 @@ fn destructuring_tuple_test() {
     let (data1, data2, _) = datas;
     println!("data1: {} | data2: {} ", data1, data2);
 }
+
+#[test]
+fn mutable_tuple() {
+    let mut datas: (&str, i32, f64) = ("Andri Maulana", 25, 170.2);
+    println!("before mut => {:?}", datas);
+
+    datas.0 = "Andri";
+    datas.1 = 24;
+    datas.2 = 172.2;
+    println!("after mut => {:?}", datas);
+}
