@@ -189,3 +189,9 @@ fn mutable_tuple() {
     datas.2 = 172.2;
     println!("after mut => {:?}", datas);
 }
+
+#[test]
+fn void_tuple() {
+    let res: () = ();
+    println!("{:?}", res);
+}
