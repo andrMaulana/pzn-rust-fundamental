@@ -144,3 +144,11 @@ fn boolean_operation() {
     let kelulusan: bool = lulus_absen && lulus_nilai;
     println!("{}", kelulusan);
 }
+
+#[test]
+fn char() {
+    let a: char = 'a';
+    let b: char = 'b';
+
+    println!("{} {}", a, b);
+}
