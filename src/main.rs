@@ -225,3 +225,14 @@ fn length_arr() {
     println!("{:?}", names);
     println!("Panjang Arr: {}", names.len());
 }
+
+#[test]
+fn array_two_dimensional() {
+    let matrix: [[i32; 2]; 2] = [[1, 2], [3, 4]];
+
+    println!("max matrix: {:?}", matrix);
+    println!("{}", matrix[0][0]);
+    println!("{}", matrix[0][1]);
+    println!("{}", matrix[1][0]);
+    println!("{}", matrix[1][1]);
+}
