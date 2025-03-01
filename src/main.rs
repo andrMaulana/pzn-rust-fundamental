@@ -208,3 +208,13 @@ fn access_arr() {
     println!("{:?}", arr);
     println!("{} {}", arr[0], arr[1]);
 }
+
+#[test]
+fn mutable_arr() {
+    let mut arr: [&str; 3] = ["Andri", "Eko", "Asep"];
+    println!("{:?}", arr);
+
+    arr[1] = "Eko Kurniawan";
+    arr[2] = "Asep Cobra";
+    println!("{:?}", arr);
+}
