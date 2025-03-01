@@ -218,3 +218,10 @@ fn mutable_arr() {
     arr[2] = "Asep Cobra";
     println!("{:?}", arr);
 }
+
+#[test]
+fn length_arr() {
+    let names: [&str; 4] = ["Budi", "Andri", "Eko", "Ayu"];
+    println!("{:?}", names);
+    println!("Panjang Arr: {}", names.len());
+}
