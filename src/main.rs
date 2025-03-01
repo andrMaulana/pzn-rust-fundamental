@@ -236,3 +236,9 @@ fn array_two_dimensional() {
     println!("{}", matrix[1][0]);
     println!("{}", matrix[1][1]);
 }
+
+#[test]
+fn test_constant() {
+    const MINIMUM: i32 = 100;
+    println!("{}", MINIMUM);
+}
