@@ -201,3 +201,10 @@ fn test_array() {
     let arr: [i32; 5] = [1, 2, 3, 4, 5];
     println!("{:?}", arr);
 }
+
+#[test]
+fn access_arr() {
+    let arr: [i32; 2] = [1, 2];
+    println!("{:?}", arr);
+    println!("{} {}", arr[0], arr[1]);
+}
