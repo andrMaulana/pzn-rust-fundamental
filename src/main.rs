@@ -255,3 +255,21 @@ fn variable_scope() {
     }
     println!("Hallo {}", andri);
 }
+
+#[test]
+fn stack_heap() {
+    function_a();
+    function_b();
+}
+
+fn function_a() {
+    let a = 10;
+    let b = String::from("Andri");
+    println!("{}, {}", a, b);
+}
+
+fn function_b() {
+    let a = 10;
+    let b = String::from("Maulana");
+    println!("{}, {}", a, b);
+}
