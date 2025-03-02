@@ -242,3 +242,16 @@ fn test_constant() {
     const MINIMUM: i32 = 100;
     println!("{}", MINIMUM);
 }
+
+#[test]
+fn variable_scope() {
+    let andri: &str = "Andri";
+
+    {
+        // inner scope
+        println!("Hallo {}", andri);
+        let maulana: &str = "Maulana";
+        println!("Hallo {}", maulana);
+    }
+    println!("Hallo {}", andri);
+}
