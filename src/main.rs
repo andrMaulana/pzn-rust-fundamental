@@ -314,3 +314,13 @@ fn data_copy() {
     let b: i32 = a; // copy data dari variable a ke varible b
     println!("{} {}", a, b);
 }
+
+#[test]
+fn ownership_movement() {
+    let name1: String = String::from("Andri Maulana");
+
+    // Ownership dari name1 di pindahkan ke ownership baru yaitu name2
+    let name2: String = name1;
+    // name1 jadi tidak akan valid lagi disini karena ownership nya sudah di pindahkan
+    println!("{}", name2);
+}
