@@ -281,3 +281,14 @@ fn str_type() {
     let trims: &str = name.trim();
     println!("{}", trims);
 }
+
+#[test]
+fn string_type() {
+    let mut name: String = String::from("Andri");
+    println!("{}", name);
+    name.push_str(" Maulana");
+    println!("{}", name);
+
+    let replaces: String = name.replace("Andri", "Budi");
+    println!("{}", replaces);
+}
