@@ -273,3 +273,11 @@ fn function_b() {
     let b = String::from("Maulana");
     println!("{}, {}", a, b);
 }
+
+#[test]
+fn str_type() {
+    let name: &str = "  Andri  ";
+    println!("{}", name);
+    let trims: &str = name.trim();
+    println!("{}", trims);
+}
