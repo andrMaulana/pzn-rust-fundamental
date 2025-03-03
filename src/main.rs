@@ -292,3 +292,18 @@ fn string_type() {
     let replaces: String = name.replace("Andri", "Budi");
     println!("{}", replaces);
 }
+
+#[test]
+fn ownership_rules() {
+    // variable a tidak bisa diakses disini karena belum di deklarasi
+    let a: i32 = 10; // variable a bisa diakses mulai dari sini
+
+    {
+        // variable b tidak bisa diakses disini karena belum di deklarasi
+        let b: i32 = 20; // variable b bisa diakses mulai dari sini
+        println!("{}", b);
+    } // variable b sudah selesai dieksekusi dan keluar dari scope nya maka akan dihapus di memory
+      // dan sudah tidak bisa diakses lagi
+    println!("{}", a);
+} // variable a sudah selesai dieksekusi dan keluar dari scope nya maka akan dihapus di memory dan
+  // sudah tidak bisa diakses lagi
