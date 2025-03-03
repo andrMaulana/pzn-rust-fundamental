@@ -307,3 +307,10 @@ fn ownership_rules() {
     println!("{}", a);
 } // variable a sudah selesai dieksekusi dan keluar dari scope nya maka akan dihapus di memory dan
   // sudah tidak bisa diakses lagi
+
+#[test]
+fn data_copy() {
+    let a: i32 = 10;
+    let b: i32 = a; // copy data dari variable a ke varible b
+    println!("{} {}", a, b);
+}
