@@ -340,3 +340,14 @@ fn if_expression() {
         println!("Good");
     }
 }
+
+// Else Expression
+#[test]
+fn else_expression() {
+    let value: i32 = 9;
+    if value >= 10 {
+        println!("Good Boy");
+    } else {
+        println!("Not Good Boy");
+    }
+}
