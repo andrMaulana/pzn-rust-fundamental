@@ -324,3 +324,10 @@ fn ownership_movement() {
     // name1 jadi tidak akan valid lagi disini karena ownership nya sudah di pindahkan
     println!("{}", name2);
 }
+
+#[test]
+fn clone_test() {
+    let name1: String = String::from("Andri Maulana");
+    let name2 = name1.clone();
+    println!("name1 = {}\nname2 = {}", name1, name2);
+}
