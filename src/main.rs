@@ -351,3 +351,18 @@ fn else_expression() {
         println!("Not Good Boy");
     }
 }
+
+// Else If Expression
+#[test]
+fn else_if_expression() {
+    let value: i32 = 2;
+    if value >= 8 {
+        println!("Good");
+    } else if value >= 6 {
+        println!("Not Bad");
+    } else if value >= 3 {
+        println!("Bad");
+    } else {
+        println!("Very Bad");
+    }
+}
