@@ -331,3 +331,12 @@ fn clone_test() {
     let name2 = name1.clone();
     println!("name1 = {}\nname2 = {}", name1, name2);
 }
+
+// If Expression
+#[test]
+fn if_expression() {
+    let value = 9;
+    if value >= 8 {
+        println!("Good");
+    }
+}
