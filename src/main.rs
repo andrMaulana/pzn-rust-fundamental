@@ -1,3 +1,5 @@
+use std::result;
+
 fn main() {
     println!("Hallo, World!");
 }
@@ -365,4 +367,21 @@ fn else_if_expression() {
     } else {
         println!("Very Bad");
     }
+}
+
+// Let Statement
+#[test]
+fn let_statement() {
+    let value: i32 = 9;
+    let result = if value >= 8 {
+        "Good"
+    } else if value >= 6 {
+        "Not Bad"
+    } else if value >= 3 {
+        "bad"
+    } else {
+        "Very Bad"
+    };
+
+    println!("{}", result);
 }
