@@ -1,5 +1,3 @@
-use std::result;
-
 fn main() {
     println!("Hallo, World!");
 }
@@ -384,4 +382,22 @@ fn let_statement() {
     };
 
     println!("{}", result);
+}
+
+// Loop Expression
+#[test]
+fn loop_expression() {
+    let mut number = 0;
+    loop {
+        number += 1;
+        if number >= 10 {
+            break;
+        }
+
+        if number % 2 == 1 {
+            continue;
+        }
+
+        println!("{}", number);
+    }
 }
