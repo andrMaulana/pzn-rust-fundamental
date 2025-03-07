@@ -415,3 +415,25 @@ fn loop_return_value() {
 
     println!("{}", result);
 }
+
+// Loop label
+#[test]
+fn loop_label() {
+    let mut number = 1;
+    'andri: loop {
+        let mut i = 1;
+        loop {
+            if number > 10 {
+                break 'andri;
+            }
+
+            println!("{} x {} = {}", number, i, number * i);
+            i += 1;
+            if i > 10 {
+                break;
+            }
+        }
+
+        number += 1;
+    }
+}
