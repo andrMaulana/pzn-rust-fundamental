@@ -437,3 +437,26 @@ fn loop_label() {
         number += 1;
     }
 }
+
+// Nested Loop *
+#[test]
+fn asterisk_nested_loop() {
+    let mut i = 0;
+    let max = 5;
+    loop {
+        let mut j = max;
+        let inner_j = i;
+        loop {
+            print!("* ");
+            j -= 1;
+            if j < inner_j {
+                break;
+            }
+        }
+        println!();
+        i += 1;
+        if i > max {
+            break;
+        }
+    }
+}
