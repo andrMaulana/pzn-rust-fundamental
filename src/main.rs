@@ -1,3 +1,6 @@
+use std::thread::sleep;
+use std::time::Duration;
+
 fn main() {
     println!("Hallo, World!");
 }
@@ -414,6 +417,19 @@ fn test_nested_while() {
         i += 1;
     }
 }
+
+// while Duration
+#[test]
+fn test_while_duration() {
+    let mut i = 0;
+    let max = 5;
+    while i < max {
+        println!("Nilai i: {i}");
+        i += 1;
+        sleep(Duration::from_secs(1));
+    }
+}
+
 // Loop Expression
 #[test]
 fn loop_expression() {
