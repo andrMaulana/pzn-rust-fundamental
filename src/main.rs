@@ -384,6 +384,18 @@ fn let_statement() {
     println!("{}", result);
 }
 
+// While Expression
+#[test]
+fn test_while() {
+    let mut i = 0;
+    let max = 5;
+
+    while i < max {
+        println!("Nilai i : {i}");
+        i += 1;
+    }
+}
+
 // Loop Expression
 #[test]
 fn loop_expression() {
