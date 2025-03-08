@@ -396,6 +396,24 @@ fn test_while() {
     }
 }
 
+// Nested while
+#[test]
+fn test_nested_while() {
+    let mut i = 0;
+    let max = 5;
+
+    while i < max {
+        let mut j = 0;
+        let inner_j = i;
+        while j <= inner_j {
+            print!("* ");
+            j += 1;
+        }
+
+        println!();
+        i += 1;
+    }
+}
 // Loop Expression
 #[test]
 fn loop_expression() {
