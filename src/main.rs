@@ -508,3 +508,13 @@ fn asterisk_nested_loop() {
 }
 
 // persiapan materi baru
+#[test]
+fn array_itteration() {
+    let arr: [&str; 5] = ["andri", "budi", "malik", "udin", "reza"];
+    let mut index = 0;
+
+    while index < arr.len() {
+        println!("Value {}", arr[index]);
+        index += 1;
+    }
+}
