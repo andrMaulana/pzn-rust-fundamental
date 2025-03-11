@@ -535,3 +535,12 @@ fn range_exclude() {
         println!("Number: {}", numbers[idx]);
     }
 }
+
+#[test]
+fn for_inclusive() {
+    let names: [&str; 5] = ["andri", "ano", "jaka", "fahrudin", "rehan"];
+
+    for val in 2..=4 {
+        println!("names: {}", names[val]);
+    }
+}
