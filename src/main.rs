@@ -526,3 +526,12 @@ fn for_each() {
         println!("Datas: {}", value);
     }
 }
+
+// Range exclude
+#[test]
+fn range_exclude() {
+    let numbers: [i32; 5] = [3, 4, 8, 1, 2];
+    for idx in 1..4 {
+        println!("Number: {}", numbers[idx]);
+    }
+}
