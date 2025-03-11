@@ -518,3 +518,11 @@ fn array_itteration() {
         index += 1;
     }
 }
+
+#[test]
+fn for_each() {
+    let arr: [i32; 4] = [4, 2, 3, 1];
+    for value in arr {
+        println!("Datas: {}", value);
+    }
+}
