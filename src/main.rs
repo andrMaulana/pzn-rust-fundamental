@@ -606,7 +606,7 @@ fn test_case_satu() {
 }
 
 fn factorial_recursive(n: u32) -> u32 {
-    if n == 1 {
+    if n <= 1 {
         return 1;
     }
 
@@ -615,6 +615,6 @@ fn factorial_recursive(n: u32) -> u32 {
 
 #[test]
 fn test_case_dua() {
-    let result = factorial_recursive(5);
+    let result = factorial_recursive(2);
     println!("Result: {result}");
 }
