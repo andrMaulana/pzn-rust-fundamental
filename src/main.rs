@@ -566,3 +566,25 @@ fn test_parameter() {
     say_goodbye("Andri", "Maulana");
     say_goodbye("Joko", "Anwar");
 }
+
+fn factorial_loop(n: i32) -> i32 {
+    if n < 1 {
+        return 0;
+    }
+
+    let mut result = 1;
+    for i in 1..=n {
+        result *= i;
+    }
+
+    return result;
+}
+
+#[test]
+fn return_value_test() {
+    let result = factorial_loop(5);
+    println!("Result: {result}");
+
+    let result = factorial_loop(10);
+    println!("Result: {result}");
+}
