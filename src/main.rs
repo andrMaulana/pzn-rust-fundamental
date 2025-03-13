@@ -556,3 +556,13 @@ fn test_function() {
     say_hello();
     say_hello();
 }
+
+fn say_goodbay(first_name: &str, last_name: &str) {
+    println!("Goodbay👋 {} {}", first_name, last_name);
+}
+
+#[test]
+fn test_parameter() {
+    say_goodbay("Andri", "Maulana");
+    say_goodbay("Joko", "Anwar");
+}
