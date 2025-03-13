@@ -546,4 +546,13 @@ fn for_inclusive() {
 }
 
 // persipan materi function
-//
+fn say_hello() {
+    println!("Hello");
+}
+
+#[test]
+fn test_function() {
+    say_hello();
+    say_hello();
+    say_hello();
+}
