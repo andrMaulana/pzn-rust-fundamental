@@ -7,7 +7,7 @@ fn main() {
 
 #[test]
 fn variable() {
-    let nama = "Andri Maulana";
+    let nama = "Andri Gojo";
     println!("Hallo {} ", nama);
 }
 
