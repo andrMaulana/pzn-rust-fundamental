@@ -17,7 +17,7 @@ fn mutable() {
     println!("hallo {}", nama);
 
     let nama = 4122;
-    println!("mutable => '{}'", nama);
+    println!("Not Mutable => '{}'", nama);
 }
 
 #[test]
